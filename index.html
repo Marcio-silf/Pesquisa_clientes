@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Status de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Substitua pelo logo da sua empresa -->
+            <img src="https://res.cloudinary.com/dncwli0wh/image/upload/v1744731567/Ampa_Food-1_eyfrk4.png" alt="Logo da Empresa">
+        </div>
+        
+        <h1>Consulta de Status de Clientes</h1>
+        
+        <div class="description">
+            <p>Utilize esta ferramenta para verificar o status atual de seus clientes.</p>
+            <p>Informe o CNPJ ou código do cliente para consultar quando foi a última compra e o Status do cliente.</p>
+        </div>
+        
+        <div class="search-form">
+            <div class="input-group">
+                <label for="search">CNPJ/CPF ou Código do Cliente:</label>
+                <input type="text" id="search" placeholder="Digite o CNPJ/CPF (somente números) ou código do cliente">
+                <div id="search-error" class="error">Por favor, insira um CNPJ ou CPF válido (11 ou 14 dígitos) ou código do cliente.</div>
+            </div>
+            
+            <button id="search-button">Consultar Status</button>
+        </div>
+        
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Consultando informações...</p>
+        </div>
+        
+        <div id="result" class="result">
+            <h3>Resultado da Consulta</h3>
+            <div id="result-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
