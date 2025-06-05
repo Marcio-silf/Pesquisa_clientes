@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         const formattedCNPJCPF = formatCNPJCPF(clientData.cgcent);
-        const whatsappNumber = '5531997906472';
+        const whatsappNumber = '5531995315869';
         
         const message = `*SOLICITAÇÃO DE TRANSFERÊNCIA DE REPRESENTANTE*
 
